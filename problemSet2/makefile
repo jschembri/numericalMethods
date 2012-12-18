@@ -29,4 +29,7 @@ make time_resolution:
 	$(CXX) $(CXXFLAGS) -I /usr/local/include/eigen -c time_resolution.cpp
 	$(CXX) $(CXXFLAGS) -o time_resolution time_resolution.o
 
+make residual:
+	$(CXX) $(CXXFLAGS) -I /usr/local/include/eigen -c residual.cpp
+	$(CXX) $(CXXFLAGS) -o residual residual.o
 

@@ -21,9 +21,9 @@ for n in points:
 	loop_iterative.append(float(data[1]))
 	time_answer.append(float(data[2]))
 
-plt.plot(points, time_iterative,linewidth=4)
+plt.plot(points, loop_iterative,linewidth=4)
 plt.xlabel('N')
-plt.ylabel('Time(seconds)')
-plt.title('Time required for Jacobian Iteration')
+plt.ylabel('Iterations')
+plt.title('Number of Iterations required for Jacobian Iteration')
 show()
 

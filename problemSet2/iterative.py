@@ -10,7 +10,7 @@ from datetime import datetime
 
 print "Process | Number | Iterative | Matrix|" 
 jacob_time_answer=[]
-jacob_points = [3,5,10,15,20,25,30,35,40,45,50]
+jacob_points = [3,5,10,15,20,25,30,35,40,45,50,60]
 
 jacob_time_iterative=[]
 jacob_loop_iterative=[]
@@ -37,10 +37,11 @@ for n in gs_points:
 	gs_time_answer.append(float(data[2]))
 
 
-plt.plot(jacob_points, jacob_time_iterative,label='Jacobian',linewidth=4)
-plt.plot(gs_points, gs_time_iterative,label='Gauss_Seidel',linewidth=4)
+plt.plot(jacob_points, jacob_loop_iterative,label='Jacobian',linewidth=4)
+plt.plot(gs_points, gs_loop_iterative,label='Gauss_Seidel',linewidth=4)
 plt.xlabel('N')
-plt.ylabel('Loop Iteration')
+plt.ylabel('Time(seconds)')
+plt.title('Loops required for Two Iteration Schemes')
 legend()
 show()
 

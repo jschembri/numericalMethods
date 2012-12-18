@@ -129,7 +129,7 @@ int main(int argc, char **argv){
 	}
   t_end=time(0);
 	dif_iterative = difftime (t_end,t_start);
-	cout << dif_iterative <<"," <<loop<<"," << dif_matrix;
+	cout << dif_iterative <<"," <<loop<<"," << dif_matrix <<","<<maximum_array(xc,xkplus1,n);
 
    return 0; 
 

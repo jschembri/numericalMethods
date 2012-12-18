@@ -68,7 +68,7 @@ VectorXf gauss_seidel(VectorXf xk, MatrixXf A,VectorXf b, int n, int loop){
 int main(int argc, char **argv){
    int n = atof(argv[1]);
    double h = 1.0/(n+1.0);
-	int loop = 3; // number of iterations
+	int loop = atof(argv[2]); // number of iterations
    time_t t_start,t_end;
    VectorXf  f (n,1);
    VectorXf  x (n,1);
@@ -128,7 +128,7 @@ int main(int argc, char **argv){
   	t_end=time(0);
   	dif_iterative = difftime (t_end,t_start);
 
-	cout << "Maximum residual \n" << maximum_array(x,xc,n) <<endl;
+	cout << dif_iterative << "," << maximum_array(x,xc,n);
 	//cout << "R is \n" << R <<endl;
 	//cout << "I is \n" << I <<endl;
 
